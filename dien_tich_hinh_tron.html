@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        center{
+            background-color: yellow;
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+.<center>
+    <h1>Chương trình tính diện tích hình tròn</h1>
+    <input type="number" placeholder="Nhập vào bán kính R" id="R">
+    <button onclick="dientich()">Thực hiện tính</button>
+    <p id="kq"></p>
+    <script>
+        function dientich(){
+            let bankinhR = +document.getElementById("R").value;
+            let dientichS = (bankinhR*bankinhR)*3.14;
+            document.getElementById("kq").innerHTML = "Diện tích hình tròn là: " +dientichS;
+        }
+    </script>
+</center>
+</body>
+</html>
